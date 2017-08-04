@@ -1,0 +1,6 @@
+
+gcc -I. -I./m4ri/ -L./usr/local/lib/libm4ri.so -std=gnu99 -mmmx -msse -msse2 -msse3 -mpopcnt -g -O3 -Wall -Wformat=0 -DDEBUG qdist_m4ri.c mmio.c -o qdist_m4ri -lm4ri -lm
+
+sudo ./qdist_m4ri
+
+
