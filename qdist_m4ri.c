@@ -546,8 +546,12 @@ void local_init(int argc, char **argv){
   int i;
   //  memset(&prm,0,sizeof(params_t));
   int dbg=0;
-  prm.finP="tryX.mtx";
-  prm.finG="tryZ.mtx";
+
+  prm.finP="GX40.mtx";
+  prm.finG="GZ40.mtx";
+
+//  prm.finP="tryX.mtx";
+//  prm.finG="tryZ.mtx";
   
   for(i=1; i<argc; i++){
     if(sscanf(argv[i],"debug=%d",& dbg)==1){
